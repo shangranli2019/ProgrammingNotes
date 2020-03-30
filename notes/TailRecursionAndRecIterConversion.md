@@ -61,9 +61,7 @@ On the other hand, countTail() also takes in an integer as parameter and increme
 
 The following graph visuals the execution process and stack frame of the two methods above. Notice non-tail recursion, in which increment logic is before the recursive call, actually start performing the length calculation from **the last node** and then backward. On the other hand, the tail recursive case, the length calculation starts from **the first node** and then forward. This observation is particularly important, as it give hints on how to recursively solve list-related algorithm problems where each ListNode correspond a stack frame **(to do....insert a link to an article about reverse linked list recursively)**.
 
-![TailRecursion&LoopConversion](/Users/shawn/Desktop/ProgrammingNotes/notes/TailRecursion&LoopConversion.png)
-
-
+![](/Users/shawn/Desktop/ProgrammingNotes/notes/TailRecursionVisual.png)
 
 #### Tail Call Optimization
 
